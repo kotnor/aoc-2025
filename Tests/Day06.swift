@@ -2,28 +2,21 @@ import XCTest
 
 @testable import AdventOfCode
 
-final class Day05Tests: XCTestCase {
+final class Day06Tests: XCTestCase {
     let testData = """
-    3-5
-    10-14
-    16-20
-    12-18
-
-    1
-    5
-    8
-    11
-    17
-    32
+    123 328  51 64 
+     45 64  387 23 
+      6 98  215 314
+    *   +   *   + 
     """
 
     func testPart1() throws {
-        let challenge = Day05(data: testData)
-        XCTAssertEqual(String(describing: challenge.part1()), "3")
+        let challenge = Day06(data: testData)
+        XCTAssertEqual(String(describing: challenge.part1()), "4277556")
     }
 
     func testPart2() throws {
-        let challenge = Day05(data: testData)
-        XCTAssertEqual(String(describing: challenge.part2()), "14")
+        let challenge = Day06(data: testData)
+        XCTAssertEqual(String(describing: challenge.part2()), "3263827")
     }
 }
