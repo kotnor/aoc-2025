@@ -2,6 +2,7 @@ import ArgumentParser
 
 // Add each new day implementation to this array:
 let allChallenges: [any AdventDay] = [
+    Day08(),
     Day07(),
     Day06(),
     Day05(),
